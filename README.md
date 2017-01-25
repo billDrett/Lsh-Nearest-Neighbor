@@ -20,6 +20,10 @@ Use make command to compile and make clean to delete object files(there is a Mak
 <h2>Run</h2>
 ./lsh –d &lt;input file&gt; –q &lt;query file&gt; –k &lt;int&gt; -L &lt;int&gt; -ο &lt;outputfile&gt; </br>
 -d &lt;input file>: The input file name</br>
+-ο &lt;output file>: Output file name </br>
+–q <query file>: query file name, format is</br>
+-k &lt;int>: The number of hi for the hashfunctions (the number of buckets in hashtables 2^k), default value 4</br>
+-L &lt;int>: The number of hashTables in Lsh, default value 5.</br>
 <h2>Files</h2>
 Format of input file:</br>
 <b>Vector space</b></br>
@@ -44,18 +48,12 @@ item_id2</br>
 item_idQ  xQ1 xQ2 ... xQd</br></br>
 
 <b>Query File</b></br>
-–q <query file>: query file name, format is</br>
 Radius: &lt;double> </br>
 item_id1  x11 x12 ... x1d</br>
 item_id2</br>
 .</br>
 .</br>
 item_idQ  xQ1 xQ2 ... xQd</br>
-
-
--ο &lt;output file>: Output file name </br>
--k &lt;int>: The number of hi for the hashfunctions (the number of buckets in hashtables 2^k), default value 4</br>
--L &lt;int>: The number of hashTables in Lsh, default value 5.</br>
 
 
 
