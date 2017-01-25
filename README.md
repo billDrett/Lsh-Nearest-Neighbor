@@ -14,6 +14,7 @@ The LSH algorithm supports:</br>
 <li>Cosine Vector Space</li>
 <li>Hamming Metric Space</li>
 <li>Distance Matrix Metric Space</li></lu>
+See the <a href="https://github.com/billDrett/Lsh-Nearest-Neighbor/blob/master/dataTypes.h">datatypes file</a> for the format of each metric space.
 
 <h2>Compile</h2>
 Use make command to compile and make clean to delete object files(there is a MakeFile). 
