@@ -44,6 +44,8 @@ The input data are hashed in L hashtables. Each hashtable has its own hashfuncti
 After the query points are used to find the nearest neighbors and the neighbors which are within a radius. </br>
 The output consists of the query point, the R-nead neighbors, the nearest neighbor, the distance of the nearest, the time for the calculation and the true nearest with the brute force method.
 
+<h2>More information about the algorithms in the <a href="https://github.com/billDrett/Lsh-Nearest-Neighbor/tree/master/papers">Papers</a></h2>
+
 <h2>Files</h2>
 Format of input file:</br>
 <b>Vector space</b></br>
