@@ -27,6 +27,18 @@ Use make command to compile and make clean to delete object files(there is a Mak
 -k &lt;int>: The number of hi for the hashfunctions (the number of buckets in hashtables 2^k), default value 4</br>
 -L &lt;int>: The number of hashTables in Lsh, default value 5.</br>
 
+<h2/>Lsh-Api</h2>
+<lu>
+<li>void rangeSearch(T key, Listt&lt;T>* result, double radius);</li>
+Finds the neighbors of point key in radius and puts the to the list result
+<li>double AproxNN(T key, T& aproxNear);</li>
+Finds the nearest neighbor of point k(with lsh), and save it to the aproxNear variable, returns the distance between them 
+<li>double TrueNN(T key, T& aproxNear);</li>
+Finds the nearest neighbor of point k(with brute force method), and save it to the aproxNear variable, returns the distance between them 
+<li>void runLSH(std::ofstream& outFile, List&lt;T>* Search, double radius); </li>
+Runs the above functions for a list of query points (Search variable) and calculates the time. Writes its output to outFile variable.
+</lu>
+
 <h2>Functionality</h2>
 The input data are hashed in L hashtables. Each hashtable has its own hashfunction, the hashfunction is created randomly based on the k number of hi and its different depending on the metric space. More about the hashfunctions can be found on the papers. </br>
 After the query points are used to find the nearest neighbors and the neighbors which are within a radius. </br>
