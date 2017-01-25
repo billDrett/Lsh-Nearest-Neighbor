@@ -1,5 +1,5 @@
 <h1/>Lsh-Nearest-Neighbor</h1>
-LSH is an algorithm for solving the aproximate or exact Near Neighbor Search in high dimensional spaces. </br>
+LSH is an algorithm for solving the aproximate or exact Near Neighbor Search in high dimensional spaces. LSH hashes input items so that similar items map to the same “buckets” with high probability </br>
 <b>It finds:</b></br>
 <lu>
 <li>The nearest neighbor of a given point q </li>
@@ -22,7 +22,7 @@ Use make command to compile and make clean to delete object files(there is a Mak
 ./lsh –d &lt;input file&gt; –q &lt;query file&gt; –k &lt;int&gt; -L &lt;int&gt; -ο &lt;outputfile&gt; </br>
 -d &lt;input file>: The input file name</br>
 -ο &lt;output file>: Output file name </br>
-–q <query file>: query file name, format is</br>
+–q &lt;query file>: query file name, format is</br>
 -k &lt;int>: The number of hi for the hashfunctions (the number of buckets in hashtables 2^k), default value 4</br>
 -L &lt;int>: The number of hashTables in Lsh, default value 5.</br>
 <h2>Files</h2>
