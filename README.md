@@ -25,6 +25,12 @@ Use make command to compile and make clean to delete object files(there is a Mak
 –q &lt;query file>: query file name, format is</br>
 -k &lt;int>: The number of hi for the hashfunctions (the number of buckets in hashtables 2^k), default value 4</br>
 -L &lt;int>: The number of hashTables in Lsh, default value 5.</br>
+
+<h2>Functionality</h2>
+The input data are hashed in L hashtables. Each hashtable has its own hashfunction, the hashfunction is created randomly based on the k number of hi and its different depending on the metric space. More about the hashfunctions can be found on the papers. </br>
+After the query points are used to find the nearest neighbors and the neighbors which are within a radius. </br>
+The output consists of the query point, the R-nead neighbors, the nearest neighbor, the distance of the nearest, the time for the calculation and the true nearest with the brute force method.
+
 <h2>Files</h2>
 Format of input file:</br>
 <b>Vector space</b></br>
