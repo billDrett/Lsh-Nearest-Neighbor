@@ -5,6 +5,7 @@ LSH is an algorithm for solving the aproximate or exact Near Neighbor Search in 
 <li>The nearest neighbor of a given point q </li>
 <li>The neighbors of q in a range with radius R</li>
 </lu>
+List and hashtable structure are created because STL wasn't allowed in the class
 
 <h2>Support</h2>
 The LSH algorithm supports:</br>
